@@ -23,7 +23,7 @@ const TrendingNow: React.FC<TrendingNowProps> = ({
   return (
     <div className="h-[400] w-[400px] sm:w-full bg-neutral-950 border-red-800 border-2 rounded-xl border-rounded-xl">
       <div className="flex flex-col pt-4 items-top ">
-        <div className="text-2xl text-white text-center">
+        <div className="text-3xl text-white text-center">
             Trending Now
         </div>  
         <TrendingItem title={title} description={description} ranking={ranking} image={image}/>

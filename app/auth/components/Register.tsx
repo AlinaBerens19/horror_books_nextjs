@@ -1,17 +1,50 @@
 'use client'
 
 import React from 'react';
+import axios from 'axios';
 import { FieldValues, useForm } from 'react-hook-form';
+import { useRouter } from 'next/navigation';
 
 const Register = () => {
+
+  const router = useRouter();
+  
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<FieldValues>();
+  } = useForm<FieldValues>({
+    defaultValues: {
+      username: '',
+      email: '',
+      phone: '',
+      password: '',
+      confirmPassword: '',
+      image: '',
+  }}
+  );
 
   const onSubmit = (data: FieldValues) => {
-    console.log(data);
+    if(data.confirmPassword !== data.password){
+      alert('Passwords do not match')
+    }
+    try {
+      const response = axios.post("http://127.0.0.1:8000/auth/register/", data)
+      .then(response => {
+        alert("Account created successfully")
+        router.push('/auth/login')
+      })
+      .catch(error => {
+        console.log(error)
+        alert(error)
+      })
+      .finally(() => {
+        console.log('finally')
+      });
+    }
+    catch (error) {
+      console.log(error)
+    }
   };
 
   return (
@@ -46,6 +79,13 @@ const Register = () => {
         className="text-2xl p-1 sm:w-[300px] text-white border-2 bg-neutral-800 border-white hover:border-red-600 rounded-md focus:border-red-600"
         placeholder="Password"
         {...register('password', { required: true })}
+      />
+
+      <input
+        type="password"
+        className="text-2xl p-1 sm:w-[300px] text-white border-2 bg-neutral-800 border-white hover:border-red-600 rounded-md focus:border-red-600"
+        placeholder="Password"
+        {...register('confirmPassword', { required: true })}
       />
       {errors.password && <span>This field is required</span>}
       <button

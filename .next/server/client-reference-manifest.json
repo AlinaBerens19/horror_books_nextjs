@@ -1,0 +1,498 @@
+{
+  "ssrModuleMapping": {
+    "(app-client)/./node_modules/next/dist/client/components/app-router.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/components/app-router.js",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/client/components/error-boundary.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/components/error-boundary.js",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/components/redirect-boundary.js",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/client/components/layout-router.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/components/layout-router.js",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/components/render-from-template-context.js",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./app/(site)/components/Footer.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/(site)/components/Footer.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./app/(site)/components/Header.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/(site)/components/Header.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./app/(site)/components/ListOfBooks.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/(site)/components/ListOfBooks.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./app/(site)/components/Main.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/(site)/components/Main.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./app/(site)/components/MostTerrifying.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/(site)/components/MostTerrifying.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./app/(site)/components/NewArrival.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/(site)/components/NewArrival.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./app/(site)/components/TopTenBooks.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/(site)/components/TopTenBooks.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./app/(site)/components/TrendingItem.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/(site)/components/TrendingItem.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./app/(site)/components/TrendingNow.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/(site)/components/TrendingNow.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./app/Providers.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/Providers.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./app/LoadingSkeleton.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/LoadingSkeleton.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./app/auth/components/Login.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/auth/components/Login.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./app/dashboard/components/Account.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/dashboard/components/Account.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./app/dashboard/components/DashboardItem.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/dashboard/components/DashboardItem.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./app/dashboard/components/Uploaded.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/dashboard/components/Uploaded.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    }
+  },
+  "edgeSSRModuleMapping": {},
+  "clientModules": {
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\node_modules\\next\\dist\\client\\components\\app-router.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
+      "name": "*",
+      "chunks": [
+        "webpack:static/chunks/webpack.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
+      "name": "*",
+      "chunks": [
+        "webpack:static/chunks/webpack.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\node_modules\\next\\dist\\client\\components\\error-boundary.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
+      "name": "*",
+      "chunks": [
+        "webpack:static/chunks/webpack.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\node_modules\\next\\dist\\esm\\client\\components\\error-boundary.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
+      "name": "*",
+      "chunks": [
+        "webpack:static/chunks/webpack.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\node_modules\\next\\dist\\client\\components\\redirect-boundary.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
+      "name": "*",
+      "chunks": [
+        "webpack:static/chunks/webpack.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\node_modules\\next\\dist\\esm\\client\\components\\redirect-boundary.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
+      "name": "*",
+      "chunks": [
+        "webpack:static/chunks/webpack.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\node_modules\\next\\dist\\client\\components\\router-reducer\\fetch-server-response.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js",
+      "name": "*",
+      "chunks": [
+        "webpack:static/chunks/webpack.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\node_modules\\next\\dist\\esm\\client\\components\\router-reducer\\fetch-server-response.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js",
+      "name": "*",
+      "chunks": [
+        "webpack:static/chunks/webpack.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\node_modules\\next\\dist\\shared\\lib\\app-router-context.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
+      "name": "*",
+      "chunks": [
+        "webpack:static/chunks/webpack.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\node_modules\\next\\dist\\esm\\shared\\lib\\app-router-context.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
+      "name": "*",
+      "chunks": [
+        "webpack:static/chunks/webpack.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\node_modules\\next\\dist\\shared\\lib\\hooks-client-context.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/hooks-client-context.js",
+      "name": "*",
+      "chunks": [
+        "webpack:static/chunks/webpack.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\node_modules\\next\\dist\\esm\\shared\\lib\\hooks-client-context.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/hooks-client-context.js",
+      "name": "*",
+      "chunks": [
+        "webpack:static/chunks/webpack.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\node_modules\\next\\dist\\shared\\lib\\server-inserted-html.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/server-inserted-html.js",
+      "name": "*",
+      "chunks": [
+        "webpack:static/chunks/webpack.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\node_modules\\next\\dist\\esm\\shared\\lib\\server-inserted-html.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/server-inserted-html.js",
+      "name": "*",
+      "chunks": [
+        "webpack:static/chunks/webpack.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\node_modules\\next\\dist\\client\\components\\layout-router.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
+      "name": "*",
+      "chunks": [
+        "app-client-internals:static/chunks/app-client-internals.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\node_modules\\next\\dist\\esm\\client\\components\\layout-router.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
+      "name": "*",
+      "chunks": [
+        "app-client-internals:static/chunks/app-client-internals.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\node_modules\\next\\dist\\client\\components\\render-from-template-context.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
+      "name": "*",
+      "chunks": [
+        "app-client-internals:static/chunks/app-client-internals.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\node_modules\\next\\dist\\esm\\client\\components\\render-from-template-context.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
+      "name": "*",
+      "chunks": [
+        "app-client-internals:static/chunks/app-client-internals.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\node_modules\\next\\dist\\client\\components\\static-generation-searchparams-bailout-provider.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js",
+      "name": "*",
+      "chunks": [
+        "app-client-internals:static/chunks/app-client-internals.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\node_modules\\next\\dist\\esm\\client\\components\\static-generation-searchparams-bailout-provider.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js",
+      "name": "*",
+      "chunks": [
+        "app-client-internals:static/chunks/app-client-internals.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\app\\(site)\\components\\Footer.tsx": {
+      "id": "(app-client)/./app/(site)/components/Footer.tsx",
+      "name": "*",
+      "chunks": [
+        "app/dashboard/uploaded/page:static/chunks/app/dashboard/uploaded/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\app\\(site)\\components\\Header.tsx": {
+      "id": "(app-client)/./app/(site)/components/Header.tsx",
+      "name": "*",
+      "chunks": [
+        "app/dashboard/uploaded/page:static/chunks/app/dashboard/uploaded/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\app\\(site)\\components\\ListOfBooks.tsx": {
+      "id": "(app-client)/./app/(site)/components/ListOfBooks.tsx",
+      "name": "*",
+      "chunks": [
+        "app/(site)/page:static/chunks/app/(site)/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\app\\(site)\\components\\Main.tsx": {
+      "id": "(app-client)/./app/(site)/components/Main.tsx",
+      "name": "*",
+      "chunks": [
+        "app/(site)/page:static/chunks/app/(site)/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\app\\(site)\\components\\MostTerrifying.tsx": {
+      "id": "(app-client)/./app/(site)/components/MostTerrifying.tsx",
+      "name": "*",
+      "chunks": [
+        "app/(site)/page:static/chunks/app/(site)/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\app\\(site)\\components\\NewArrival.tsx": {
+      "id": "(app-client)/./app/(site)/components/NewArrival.tsx",
+      "name": "*",
+      "chunks": [
+        "app/(site)/page:static/chunks/app/(site)/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\app\\(site)\\components\\TopTenBooks.tsx": {
+      "id": "(app-client)/./app/(site)/components/TopTenBooks.tsx",
+      "name": "*",
+      "chunks": [
+        "app/(site)/page:static/chunks/app/(site)/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\app\\(site)\\components\\TrendingItem.tsx": {
+      "id": "(app-client)/./app/(site)/components/TrendingItem.tsx",
+      "name": "*",
+      "chunks": [
+        "app/(site)/page:static/chunks/app/(site)/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\app\\(site)\\components\\TrendingNow.tsx": {
+      "id": "(app-client)/./app/(site)/components/TrendingNow.tsx",
+      "name": "*",
+      "chunks": [
+        "app/(site)/page:static/chunks/app/(site)/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\app\\Providers.tsx": {
+      "id": "(app-client)/./app/Providers.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\app\\LoadingSkeleton.tsx": {
+      "id": "(app-client)/./app/LoadingSkeleton.tsx",
+      "name": "*",
+      "chunks": [
+        "app/loading:static/chunks/app/loading.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\app\\auth\\components\\Login.tsx": {
+      "id": "(app-client)/./app/auth/components/Login.tsx",
+      "name": "*",
+      "chunks": [
+        "app/auth/login/page:static/chunks/app/auth/login/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\app\\dashboard\\components\\Account.tsx": {
+      "id": "(app-client)/./app/dashboard/components/Account.tsx",
+      "name": "*",
+      "chunks": [
+        "app/dashboard/account/[...id]/page:static/chunks/app/dashboard/account/[...id]/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\app\\dashboard\\components\\DashboardItem.tsx": {
+      "id": "(app-client)/./app/dashboard/components/DashboardItem.tsx",
+      "name": "*",
+      "chunks": [
+        "app/dashboard/uploaded/page:static/chunks/app/dashboard/uploaded/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\app\\dashboard\\components\\Uploaded.tsx": {
+      "id": "(app-client)/./app/dashboard/components/Uploaded.tsx",
+      "name": "*",
+      "chunks": [
+        "app/dashboard/uploaded/page:static/chunks/app/dashboard/uploaded/page.js"
+      ],
+      "async": false
+    }
+  },
+  "entryCSSFiles": {
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\app\\(site)\\page": {
+      "modules": [],
+      "files": []
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\app\\layout": {
+      "modules": [
+        "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\app\\globals.css",
+        "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\node_modules\\next\\font\\google\\target.css?{\"path\":\"app\\\\layout.tsx\",\"import\":\"Pathway_Gothic_One\",\"arguments\":[{\"weight\":\"400\",\"subsets\":[\"latin\"]}],\"variableName\":\"pathwayGothicOne\"}"
+      ],
+      "files": [
+        "static/css/app/layout.css"
+      ]
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\app\\loading": {
+      "modules": [],
+      "files": []
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\app\\auth\\login\\page": {
+      "modules": [],
+      "files": []
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\app\\dashboard\\account\\[...id]\\page": {
+      "modules": [],
+      "files": []
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\app\\book\\[id]\\page": {
+      "modules": [],
+      "files": []
+    },
+    "C:\\Users\\Alina\\Desktop\\SHECODES\\Final Project\\djangoreact\\nextjs\\app\\dashboard\\uploaded\\page": {
+      "modules": [],
+      "files": []
+    }
+  }
+}

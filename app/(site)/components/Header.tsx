@@ -2,7 +2,7 @@
 
 import { twMerge } from "tailwind-merge";
 import { IoMdSearch } from 'react-icons/io';
-import { use, useEffect, useState } from "react";
+import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { signOut, useSession } from "next-auth/react";
 
@@ -19,6 +19,7 @@ const Header: React.FC<HeaderProps>= ({
   const { data: session } = useSession();
 
   const router = useRouter()
+  const {data: dataSession} = useSession();
 
   const handleSearchClick = () => {
     setSearchVisible(!searchVisible);
@@ -30,14 +31,16 @@ const Header: React.FC<HeaderProps>= ({
         w-full h-fit bg-gradient-to-b from-red-900 to-red-600 py-1 px-10
     `, className)}>
       
-      <div className="flex flex-row items-center justify-between">
+      <div className="flex flex-row px-16 items-center justify-evenly sm:justify-between">
 
         <div className="flex flex-row gap-5 items-center justify-center">
           <div>
               <img src="/images/spider.webp" className="w-25 h-20 bg-transparent" />
           </div>
 
-          <div className="text-white text-4xl">
+          <div
+            onClick={() => router.push(`/`)} 
+            className="text-white text-4xl cursor-pointer">
               Horror Library
           </div>
         </div>
@@ -58,18 +61,20 @@ const Header: React.FC<HeaderProps>= ({
               className=" bg-transparent border border-white rounded p-1 text-white hover:border-[3px]"
             />
           </div>
-          <button
-              className="hover:text-black cursor-pointer text-white text-2xl"
+          <button className="hidden md:block hover:text-black cursor-pointer text-white text-2xl"
               onClick={handleSearchClick}
           >
             <IoMdSearch />
           </button> 
 
-          <div className="flex flex-row gap-3">
+          <div className="flex flex-row gap-3 pe-5">
             
               {session ? (
                   <button 
-                    onClick={() => signOut()}
+                    onClick={() => {
+                      signOut()
+                      router.push(`/`)}
+                    }
                     className="hover:text-black text-white text-xl cursor-pointer"
                   >
                     Logout
@@ -83,13 +88,16 @@ const Header: React.FC<HeaderProps>= ({
                   </button>
                 )} 
             <div className="text-white text-xl">
-              {session ? '' : '|'}
+              {session ? '|' : '|'}
             </div> 
             <button 
-                onClick={() => router.push(`/auth/register/`)}
+                onClick={() => {
+                  session ? router.push(`/dashboard/account/${dataSession?.user?.email}`) :
+                  router.push(`/auth/register/`)}
+                }
                 className="hover:text-black text-white text-xl cursor-pointer"
             >
-              {session ? '' : 'Register'}
+              {session ? 'Dashboard' : 'Register'}
             </button> 
           </div> 
           

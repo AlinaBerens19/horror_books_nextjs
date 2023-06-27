@@ -27,12 +27,12 @@ const TopTenBooks: React.FC<TopTenBooksProps> = ({
       <div className="pt-4 flex flex-col">
 
       <div className="pt-3 flex flex-row items-top justify-center">
-        <div className="text-2xl text-white">
+        <div className="text-3xl text-white">
             Top 10
         </div>
       </div>
 
-      <div className="flex flex-col p-4 items-start text-xl gap-3 justify-start">
+      <div className="flex flex-col py-4 px-10 items-start text-xl gap-3 justify-start">
           {book_arr?.map((book, index) => (
             <div key={index} className="flex flex-row items-center gap-3 justify-center">
               <div className="text-white">

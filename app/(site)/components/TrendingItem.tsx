@@ -34,7 +34,7 @@ const TrendingItem: React.FC<TrendingItemProps> = ({
         
       </div>
 
-      <div className="w-full md:w-[400px] text-white text-base md:text-xl mt-4 md:mt-0">
+      <div className="w-full md:w-[400px] text-white px-10 text-xl mt-4 md:mt-0">
         {shortenedDescription} ...
       </div>
 

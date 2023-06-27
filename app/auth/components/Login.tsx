@@ -1,18 +1,16 @@
 'use client'
 
-import axios from "axios";
-import React, { useEffect, useState } from 'react';
+import React, { use, useEffect, useState } from 'react';
 import { signIn, useSession  } from "next-auth/react";
 import { FieldValues, SubmitHandler, useForm } from 'react-hook-form';
 import { useRouter } from "next/navigation";
-import { useToast } from "@chakra-ui/react";
 
 const Login = () => {
 
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
-  const { data: session } = useSession();
-
+  const { data: sessionData } = useSession();
+  
 
   const {
   register,
@@ -24,7 +22,6 @@ const Login = () => {
     username: '',
   }
   });
-
 
   const signInWithGoogle = async () => {
     signIn('google', { callbackUrl: '/' })
@@ -42,30 +39,35 @@ const Login = () => {
       });
   };
   
-  
 
-
-  const onSubmit: SubmitHandler<FieldValues> = (data) => {
+  const onSubmit: SubmitHandler<FieldValues> = async (data) => {
     setIsLoading(true);
     signIn('credentials', {
-        ...data,
-        redirect: false,
+      ...data,
+      redirect: false,
     })
-    .then((callback) => {
+      .then((response) => {
         setIsLoading(false);
-        if(callback?.ok) {
-            alert('Login successful');
-            // console.log('SESSION ==> ', session);
-            router.refresh();
-        } 
-        if(callback?.error){
-            alert(callback.error);
+        if (response?.ok) {
+          if (!sessionData) {
+            return <div>Loading...</div>; // Render a loading state while fetching session data
+          }
+  
+          const email = sessionData?.user?.email;
+          alert(email + ' logged in successfully');
+          
+          const url = `/dashboard/account/${email}`;
+
+          router.push(url);
+        } else if (response?.error) {
+          alert(response.error);
         }
-
-        console.log('RESPONSE FROM SERVER:', callback); // Add this console log statement  
-    })
-  } 
-
+      })
+      .catch((error) => {
+        console.error('Login error:', error);
+      });
+  };
+  
   
 
   return (
