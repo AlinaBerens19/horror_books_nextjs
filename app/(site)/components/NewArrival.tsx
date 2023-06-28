@@ -6,18 +6,21 @@ import { useEffect, useState } from "react";
 
 
 interface NewArrivalProps {
-  book_images?: (string | undefined)[];
+  books?: (Book | undefined)[];
 }
 
 
 const NewArrival: React.FC<NewArrivalProps> = ({
-  book_images
+  books
 }) => {
 
-  const imageDictionary = book_images?.map((image, index) => {
+  const imageDictionary = books?.map((book, index) => {
     return {
-      id: index,
-      image: image,
+      id: book?.id,
+      image: book?.image,
+      title: book?.title,
+      description: book?.description,
+      author: book?.author
     }
   })
 
@@ -30,7 +33,7 @@ const NewArrival: React.FC<NewArrivalProps> = ({
         New Arrival
       </div>
 
-      <ListOfBooks book_images={imageDictionary}/>
+      <ListOfBooks books={imageDictionary}/>
     </div>
   )
 }

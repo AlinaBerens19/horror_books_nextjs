@@ -5,6 +5,7 @@ import TrendingItem from "./TrendingItem";
 
 
 interface TrendingNowProps {
+    id?: string;
     children?: React.ReactNode;
     title: string | null;
     ranking: number | null;
@@ -13,6 +14,7 @@ interface TrendingNowProps {
 }
 
 const TrendingNow: React.FC<TrendingNowProps> = ({
+    id,
     children,
     title,
     ranking,
@@ -26,7 +28,7 @@ const TrendingNow: React.FC<TrendingNowProps> = ({
         <div className="text-3xl text-white text-center">
             Trending Now
         </div>  
-        <TrendingItem title={title} description={description} ranking={ranking} image={image}/>
+        <TrendingItem id={id} title={title} description={description} ranking={ranking} image={image}/>
       </div>
     </div>
   )

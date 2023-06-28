@@ -28,10 +28,10 @@ const Main = () => {
   const filteredBooksNewArrival = fetchedBooks.filter((book) => book.category === 'New').slice(0, 5);
 
   // Create array of 'Terrifying' book images
-  const bookImagesTerrifying = filteredBooksTerrifying?.map((book) => book.image);
+  const terrifyingBooks = filteredBooksTerrifying?.map((book) => book);
 
   // Create array of 'New' book images
-  const bookImagesNewArrival = filteredBooksNewArrival?.map((book) => book.image);
+  const newBooksArrival = filteredBooksNewArrival?.map((book) => book);
 
   // Create array of first top ten books
   const topTenBooks = sortedBooks?.slice(0, 9)
@@ -44,11 +44,13 @@ const Main = () => {
     return 0; // Return 0 for null or undefined values
   });
 
+  const firstTrendingBook = trending_now[0];
+
+
   useEffect(() => {
     const getBooks = async () => {
-        getData('http://127.0.0.1:8000/library/books/')
+      getData('http://127.0.0.1:8000/library/books/')
         .then(() => {
-            console.log('fetched_books ==> ', books);
             setFetchedBooks(books);
         }
         )
@@ -59,28 +61,30 @@ const Main = () => {
         .finally(() => {
           setIsLoading(false);
         })
+
       }
     
       getBooks();
-    
+
   }, []);
     
   return (
     <div className="flex flex-col w-full items-center justify-center bg-neutral-800">
-      <div className="flex flex-col lg:flex-row p-5 lg:gap-5 gap-10">
+      <div className="flex flex-col lg:flex-row p-5 sm:px-24 sm:py-5 lg:gap-5 gap-10">
           <TopTenBooks
             title={topTenBooks?.map((book) => book.title)}
             ranking={topTenBooks?.map((book) => book.ranking)}
           />
           <TrendingNow
-            title={trending_now[0]?.title}
-            description={trending_now[0]?.description}
-            image={trending_now[0]?.image}
-            ranking={trending_now[0]?.ranking}
+            id={firstTrendingBook?.id}
+            title={firstTrendingBook?.title}
+            description={firstTrendingBook?.description}
+            image={firstTrendingBook?.image}
+            ranking={firstTrendingBook?.ranking}
           />
       </div>
-      <MostTerrifying book_images={bookImagesTerrifying} />
-      <NewArrival book_images={bookImagesNewArrival} />
+      <MostTerrifying books={terrifyingBooks} />
+      <NewArrival books={newBooksArrival} />
     </div>
   );
 };

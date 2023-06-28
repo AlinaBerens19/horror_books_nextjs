@@ -1,23 +1,25 @@
 'use client'
 
-import { useEffect, useState } from "react";
-import ListOfBooks from "./ListOfBooks";
 import { Book } from "@/app/models/Book";
+import ListOfBooks from "./ListOfBooks";
 
 
 interface MostTerrifyingProps {
-    book_images?: (string | undefined)[];
+    books?: (Book | undefined)[];
 }
 
 const MostTerrifying: React.FC<MostTerrifyingProps> = ({
-    book_images,
+  books,
 }) => {
 
 
-  const imageDictionary = book_images?.map((image, index) => {
+  const imageDictionary = books?.map((book) => {
     return {
-      id: index,
-      image: image,
+      id: book?.id,
+      image: book?.image,
+      title: book?.title,
+      description: book?.description,
+      author: book?.author
     }
   })
 
@@ -29,7 +31,7 @@ const MostTerrifying: React.FC<MostTerrifyingProps> = ({
         Most Terrifying
       </div>
 
-      <ListOfBooks book_images={imageDictionary}/>
+      <ListOfBooks books={imageDictionary}/>
     </div>
   )
 }

@@ -11,7 +11,7 @@ const Footer: React.FC<FooterProps> = ({
 }) => {
   return (
     <div className={twMerge(`
-        w-full h-[200px] pt-20 bg-gradient-to-t from-red-900 to-red-600 py-1 px-10
+        w-full h-[200px] pt-20 bg-gradient-to-t from-red-900 to-red-600 py-1 px-16
     `, className)}>
         <div className="text-white text-2xl">
             <div className="flex flex-col items-start justify-start px-10 pt-4">

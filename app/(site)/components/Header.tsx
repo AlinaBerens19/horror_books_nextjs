@@ -28,12 +28,12 @@ const Header: React.FC<HeaderProps>= ({
 
   return (
     <div className={twMerge(`
-        w-full h-fit bg-gradient-to-b from-red-900 to-red-600 py-1 px-10
+        w-full h-fit bg-gradient-to-b from-red-900 to-red-600 py-1 px-5
     `, className)}>
       
-      <div className="flex flex-row px-16 items-center justify-evenly sm:justify-between">
+      <div className="flex flex-row sm:gap-0 sm:px-16 items-center justify-between">
 
-        <div className="flex flex-row gap-5 items-center justify-center">
+        <div className="flex flex-row gap-5 items-center justify-start">
           <div>
               <img src="/images/spider.webp" className="w-25 h-20 bg-transparent" />
           </div>
@@ -50,7 +50,7 @@ const Header: React.FC<HeaderProps>= ({
 
           {/* Slide-in search field */}
           <div
-            className={`transition-all duration-300 slide-in-out ${
+            className={`hidden sm:block transition-all duration-300 slide-in-out ${
               searchVisible ? '-translate-x-1/2 opacity-0' : 'translate-x-0 opacity-100'
               
             }`}
@@ -58,7 +58,7 @@ const Header: React.FC<HeaderProps>= ({
             <input
               type="text"
               placeholder="Search"
-              className=" bg-transparent border border-white rounded p-1 text-white hover:border-[3px]"
+              className="sm:w-[200px] bg-transparent border border-white rounded p-1 text-white hover:border-[3px]"
             />
           </div>
           <button className="hidden md:block hover:text-black cursor-pointer text-white text-2xl"
@@ -75,19 +75,19 @@ const Header: React.FC<HeaderProps>= ({
                       signOut()
                       router.push(`/`)}
                     }
-                    className="hover:text-black text-white text-xl cursor-pointer"
+                    className="hidden sm:block hover:text-black text-white text-xl cursor-pointer"
                   >
                     Logout
                   </button>  ) : 
                 (
                   <button 
                     onClick={() => router.push(`/auth/login/`)}
-                    className="hover:text-black text-white text-xl cursor-pointer"
+                    className="hidden sm:block hover:text-black text-white text-xl cursor-pointer"
                   >
                     Login
                   </button>
                 )} 
-            <div className="text-white text-xl">
+            <div className="hidden sm:block text-white text-xl">
               {session ? '|' : '|'}
             </div> 
             <button 
@@ -95,7 +95,7 @@ const Header: React.FC<HeaderProps>= ({
                   session ? router.push(`/dashboard/account/${dataSession?.user?.email}`) :
                   router.push(`/auth/register/`)}
                 }
-                className="hover:text-black text-white text-xl cursor-pointer"
+                className="hidden sm:block hover:text-black text-white text-xl cursor-pointer"
             >
               {session ? 'Dashboard' : 'Register'}
             </button> 
